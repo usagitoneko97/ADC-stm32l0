@@ -28,7 +28,8 @@ Src/main.o: ../Src/main.c \
  C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h \
  C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h \
  C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Inc/Adc.h \
- C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l053xx.h
+ C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l053xx.h \
+ C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Inc/Nvic.h
 
 C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Inc/main.h:
 
@@ -89,3 +90,5 @@ C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Drivers/STM32L0xx
 C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Inc/Adc.h:
 
 C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l053xx.h:
+
+C:/Users/User_Lenovo/Documents/AndroidControlledWC/adc_stm32l0/Inc/Nvic.h:

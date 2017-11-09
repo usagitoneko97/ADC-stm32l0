@@ -41,6 +41,7 @@
 
 /* USER CODE BEGIN Includes */
 #include "Adc.h"
+#include "Nvic.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -96,13 +97,16 @@ int main(void)
   __HAL_RCC_ADC1_CLK_ENABLE();
 
 //  MX_ADC_Init();
-//  ADC_SET_CKMODE(2);
+  ADC_SET_CKMODE(2);
   ADC_ENABLE();
   ADC_CLEAR_ALL_CHANNEL();
   ADC_SELECT_CHANNEL(18);
   ADC_SAMPLING(3);
-  ADC_SET_CONT_MODE();
+//  ADC_SET_CONT_MODE();
   ADC_ENABLE_TMP_SENSOR();
+  nvicEnableIrq(12);
+//  ADC_ENABLE_IT_EOC();
+  ADC_ENABLE_IT_OVR();
   ADC_START();
 
   /* USER CODE END 2 */
@@ -114,7 +118,8 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-//	  HAL_Delay(100);
+	  HAL_Delay(100);
+
 	  volatile int value = ADC_GET_DATA();
 
   }
@@ -229,7 +234,10 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void ADC1_COMP_IRQHandler(void){
+	volatile int i;
+	i++;
+}
 /* USER CODE END 4 */
 
 /**
